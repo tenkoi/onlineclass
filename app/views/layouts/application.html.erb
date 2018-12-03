@@ -19,10 +19,11 @@
   <body>
     <nav>
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">OnlineKelas</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        <%= link_to "onlineKELAS", root_path, :class => "brand-logo" %>
+        <a href="<%= root_path %>" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#"><i class="large material-icons">toc</i></i></a></li>
+          <li><a href="<%= root_path %>"><i class="large material-icons">toc</i></i></a></li>
           <li><a href="<%= pages_about_path %>"><i class="large material-icons">comment</i></a></li>
           <li><a href="<%= pages_contact_path %>"><i class="large material-icons">location_on</i></a></li>
 
